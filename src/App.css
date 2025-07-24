@@ -1,23 +1,22 @@
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
+.app {
   z-index: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  overflow: hidden;
+  background: linear-gradient(-45deg, #1a1a1a, #202020, #1a1a1a);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
 }
 
-
-
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 .page {
   height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FF6600;
+  color: #f0f0f0;
   size: x-large;
   z-index: 200;
 }
@@ -26,22 +25,18 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-
   padding: 0.2rem 1.5rem;
-  background: linear-gradient(to right, #e5e5e5, #d4d4d4);
-  font-weight: 650;
-  font-size: 1.3rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-
+  background: linear-gradient(to right, #1f1f1f, #2a2a2a);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
-
 }
 
 .navbar a {
-  color: white;
-  text-decoration: none;
+  font-weight: 650;
+  font-size: 1.3rem;
+  color: #e0e0e0;
   padding: 0.5rem;
   border-radius: 4px;
 }
@@ -49,7 +44,6 @@
 .navbar a.active {
   color: #FF6600;
   font-weight: 800;
-  
 }
 
 .navbar a:hover {
@@ -59,14 +53,20 @@
 
 
 .welcome {
-
   height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #f0f0f0;
+  text-shadow: 1px 2px 3px #000;
+  font-weight: 625;
+  font-size: 4.5rem;
+  z-index: 100; 
+}
+
+.welcome-name {
   color: #FF6600;
-  size: xx-large;
-  z-index: 100;
+  font-weight: 675;
 }
 
 .welcome-background {

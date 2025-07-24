@@ -1,8 +1,8 @@
 function Welcome() {
   return (
     <div className="welcome">
-        <p className="header">
-            <span>Hello, I'm</span> <span>Tyler</span> 
+        <p>
+            <span>Hello, I'm</span> <span className='welcome-name'>Tyler</span> 
         </p>
     </div>
   );
