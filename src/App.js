@@ -1,5 +1,7 @@
 
 import './App.css';
+import Background from './components/Background';
+import WelcomeBackground from './components/WelcomeBackground';
 import Welcome from './components/Welcome';
 import NavBar from './components/NavBar';
 import Project from './components/Project';
@@ -9,11 +11,18 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div>
-      <div id="welcome" className="page">
+    <>
+
+      <div>
+        <WelcomeBackground />
+      </div>
+      <div id="welcome" className="welcome">
         <Welcome />
       </div>
-      <NavBar />
+      <div className="background">
+        <Background />
+      </div>
+      <NavBar />      
       <div id="projects" className="page">
         <Project />
         <Project />
@@ -24,9 +33,14 @@ function App() {
       <div id="contact" className="page">
         <Contact />
       </div>
-    </div>
-
+    </>
   );
 }
+
+
+
+
+
+
 
 export default App;
