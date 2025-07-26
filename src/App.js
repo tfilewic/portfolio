@@ -1,4 +1,3 @@
-
 import './App.css';
 import WelcomeBackground from './components/WelcomeBackground';
 import Welcome from './components/Welcome';
