@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+  <text x="50" y="90" fill="white" font-size="18" font-family="serif" text-anchor="middle">Flask</text>
+  <path d="M30,20 C25,40 60,60 55,25 Q53,10 30,20 Z" fill="white"/>
+</svg>
