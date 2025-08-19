@@ -32,7 +32,7 @@ function Projects() {
     <motion.div
       initial={{ x: 100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.3 }}
       viewport={{ once: true, amount: 0.3 }}
       className="page"
       id="projects"
