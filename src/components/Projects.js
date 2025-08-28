@@ -15,7 +15,7 @@ import SQLAlchemyIcon from '../assets/SQLAlchemy.svg'
 import pytestIcon from '../assets/pytest.svg'
 import pandasIcon from '../assets/Pandas.svg'
 import dockerIcon from '../assets/Docker.svg'
-
+import numPyIcon from '../assets/NumPy.svg'
 import cppLogo from '../assets/C++.svg'
 import pythonLogo from '../assets/Python.svg'
 import raspberryPiIcon from '../assets/RaspberryPi.svg'
@@ -82,6 +82,25 @@ function Projects() {
         />
         <hr className="project-divider" />
         <Project
+          title="Glucose Time Series Analysis"
+          isOpen={openProject === "Glucose Time Series Analysis"}
+          setOpenProject={setOpenProject}
+          summary="Data analysis workflow for extracting performance metrics from artificial pancreas systems."
+          description="Python script that preprocesses CGM data with timestamp parsing, interpolation, and mode/day-night segmentation.  
+          Performs feature engineering and categorization of glucose into clinical ranges.  
+          Applies statistical aggregation to compute percent-time metrics and exports results to CSV.`"
+
+          tech={[
+            { name: "Python", icon: pythonLogo, link: "https://www.python.org/" },
+            { name: "Pandas", icon: pandasIcon, link: "https://pandas.pydata.org/" },
+            { name: "NumPy", icon: numPyIcon, link: "https://numpy.org/" },
+          ]}
+
+          source="https://github.com/tfilewic/glucose-time-series-analysis"
+          live="https://mybinder.org/v2/gh/tfilewic/glucose-time-series-analysis/HEAD"
+        />
+        <hr className="project-divider" />
+        <Project
           title="Birdcam"
           isOpen={openProject === "Birdcam"}
           setOpenProject={setOpenProject}
@@ -100,6 +119,7 @@ function Projects() {
           ]}
 
           source="https://github.com/tfilewic/birdcam"
+          live="https://mybinder.org/v2/gh/tfilewic/glucose-time-series-analysis/HEAD"
         />
       </div>
     </motion.div>

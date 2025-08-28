@@ -235,15 +235,16 @@ img:hover {
   transition: background-color 0.2s ease;
   width: 10rem;
   text-align: center;
-
 }
 
+.project-link:hover{
+  transform: scale(1.05);  
+}
 
 .project-divider {
   border: 1px solid #f0f0f03c;
   border-radius: 5px;
   margin: 0;
-
 }
 
 
