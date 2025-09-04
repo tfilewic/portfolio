@@ -119,7 +119,6 @@ function Projects() {
           ]}
 
           source="https://github.com/tfilewic/birdcam"
-          live="https://mybinder.org/v2/gh/tfilewic/glucose-time-series-analysis/HEAD"
         />
       </div>
     </motion.div>
