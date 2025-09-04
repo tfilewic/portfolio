@@ -88,7 +88,7 @@ function Projects() {
           summary="Data analysis workflow for extracting performance metrics from artificial pancreas systems."
           description="Python script that preprocesses CGM data with timestamp parsing, interpolation, and mode/day-night segmentation.  
           Performs feature engineering and categorization of glucose into clinical ranges.  
-          Applies statistical aggregation to compute percent-time metrics and exports results to CSV.`"
+          Applies statistical aggregation to compute percent-time metrics and exports results to CSV."
 
           tech={[
             { name: "Python", icon: pythonLogo, link: "https://www.python.org/" },
