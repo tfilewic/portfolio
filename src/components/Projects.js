@@ -101,7 +101,7 @@ function Projects() {
         />
         <hr className="project-divider" />
         <Project
-          title="Birdcam"
+          title="Birdcam (Planned)"
           isOpen={openProject === "Birdcam"}
           setOpenProject={setOpenProject}
           summary="Embedded system for bird detection and classification using ML"
