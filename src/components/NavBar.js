@@ -25,13 +25,13 @@ function NavBar() {
 
   return (
     <div className="navbar">
-      <a onClick={() => document.getElementById('welcome')?.scrollIntoView({ behavior: 'smooth' })}
+      <a href="#welcome" onClick={(e) => { e.preventDefault(); document.getElementById('welcome')?.scrollIntoView({ behavior: 'smooth' }); }}
         className={active === 'welcome' ? 'active' : ''}>Home</a>
-      <a onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+      <a href="#projects" onClick={(e) => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }); }}
         className={active === 'projects' ? 'active' : ''}>Projects</a>
-      <a onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+      <a href="#about" onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }}
         className={active === 'about' ? 'active' : ''}>About</a>
-      <a onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+      <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}
         className={active === 'contact' ? 'active' : ''}>Contact</a>
     </div>
   );

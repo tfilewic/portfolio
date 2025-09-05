@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function Project({ title, summary, description, tech, source, live, isOpen, setOpenProject}) {
 
   return (

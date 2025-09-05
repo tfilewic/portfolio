@@ -19,7 +19,7 @@
 
   width: calc(0.2vw + 350px);
   max-width: 85vw;
-  min-width: 50vw;
+  min-width: 60vw;
 
   display: flex;
   flex-direction: column;
@@ -50,6 +50,7 @@
   padding: 0.5rem;
   border-radius: 4px;
   transition: transform 0.1s ease;
+  text-decoration: none;
 }
 
 .navbar a.active {
@@ -80,7 +81,6 @@
   color: #f0f0f0;
   font-size: 4.5rem;
   font-weight: 625;
-
 }
 
 .welcome-name {
@@ -216,7 +216,7 @@ img:hover {
 
 .project-links {
   display: flex;
-  gap: 5rem;
+  gap: clamp(0.5rem, 3dvw, 10rem);
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
@@ -233,7 +233,7 @@ img:hover {
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.2s ease;
-  width: 10rem;
+  width: 9rem;
   text-align: center;
 }
 
@@ -273,10 +273,11 @@ img:hover {
   transition: transform 0.2s ease; 
 } 
 
+
 @media (max-width: 768px) {
 
   .project-card {
-    width: 60vw;
+    width: 80vw;
   }
 
   .about {
@@ -288,7 +289,15 @@ img:hover {
   .about img {
     width: calc(-6.52vw + 166px);
   }
+  .project-link {
+    width: 9rem;
+  }
 
+  .project-tech {
+    gap: 2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.1rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -300,6 +309,17 @@ img:hover {
   .contact {
     flex-direction: column;
   }
+
+  .project-link {
+    width: 8rem;
+  }
+
+  .project-tech {
+    gap: 1rem;
+  }
+  .tech-icon {
+    height: 25px;
+  }
 }
 
 
@@ -310,5 +330,17 @@ img:hover {
 
   .navbar a {
     font-size: clamp(1rem, 5vw, 1.3rem);
+  }
+
+  .project-link {
+    padding: 0.4rem;
+    width: 7rem;
+  }
+
+  .project-tech {
+    gap: 0.46rem;
+  }
+  .tech-icon {
+    height: 22px;
   }
 }
