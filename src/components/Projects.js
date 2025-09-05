@@ -102,7 +102,7 @@ function Projects() {
         <hr className="project-divider" />
         <Project
           title="Birdcam (Planned)"
-          isOpen={openProject === "Birdcam"}
+          isOpen={openProject === "Birdcam (Planned)"}
           setOpenProject={setOpenProject}
           summary="Embedded system for bird detection and classification using ML"
           description="Captures bird sightings with a Raspberry Pi camera and classifies species using a TensorFlow Lite model. 
