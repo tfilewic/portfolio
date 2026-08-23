@@ -14,9 +14,9 @@ function About() {
         <img src={me} alt="me"></img>
       </span>
       <span>After years as a technician in the oilsands, I decided to switch things up and pursue a Software Engineering degree from Arizona State University. 
-      I'm entering my final year, completing the program online from home in Calgary while using personal projects to fill in the gaps. 
+      I've now completed the program and am working in Calgary as a Software Engineer focused on embedded Linux and firmware development within tactical communications systems.  
       Besides that, I'm usually in the gym, rippin' the city's bike paths, or out in the mountains with my three young children. 
-      Currently focused on internships, my goal is to contribute in a hands-on technical role while learning everything I can.
+      I'm always looking to expand my skills, take on new technical challenges, and build practical things along the way.
       </span>
     </motion.div>
   );

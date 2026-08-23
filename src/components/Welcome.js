@@ -5,7 +5,7 @@ function Welcome() {
             <span className="welcome-title">Hello, I'm</span> <span className='welcome-name'>Tyler</span> 
         </p>
         <p className="welcome-subtitle">
-          Senior-year SWE student building practical tools
+          Junior Software Engineer | Embedded Linux & Firmware
         </p>
     </div>
   );
