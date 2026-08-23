@@ -19,7 +19,6 @@ import numPyIcon from '../assets/NumPy.svg'
 import cppLogo from '../assets/CPP.svg'
 import pythonLogo from '../assets/Python.svg'
 import raspberryPiIcon from '../assets/RaspberryPi.svg'
-import spotfireIcon from '../assets/Spotfire.svg'
 import openCVIcon from '../assets/OpenCV.svg'
 import tensorFlowIcon from '../assets/TensorFlow.svg'
 
@@ -106,7 +105,7 @@ function Projects() {
           setOpenProject={setOpenProject}
           summary="Embedded system for bird detection and classification using ML"
           description="Captures bird sightings with a Raspberry Pi camera and classifies species using a TensorFlow Lite model. 
-            Logs detections to CSV, uploads results to a remote server, and visualizes data with Spotfire. 
+            Logs detections to CSV, uploads results to a remote server for storage and visualization. 
             Optimized for low-power, headless operation."
 
           tech={[
@@ -115,7 +114,6 @@ function Projects() {
             { name: "Raspberry Pi", icon: raspberryPiIcon, link: "https://www.raspberrypi.com/" },
             { name: "TensorFlow Lite", icon: tensorFlowIcon, link: "https://www.tensorflow.org/lite" },
             { name: "OpenCV", icon: openCVIcon, link: "https://opencv.org/" },
-            { name: "Spotfire", icon: spotfireIcon, link: "https://www.tibco.com/products/tibco-spotfire" }
           ]}
 
           source="https://github.com/tfilewic/birdcam"
